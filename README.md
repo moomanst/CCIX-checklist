@@ -88,9 +88,11 @@ To edit files, run `gedit`, a graphical editor akin to notepad; `nano`, a simple
 
 1. Secure network
 	1. Enable the firewall
-	`sudo ufw enable`
+	
+		`sudo ufw enable`
 	1. Enable syn cookie protection
-	`sysctl -n net.ipv4.tcp_syncookies`
+	
+		`sysctl -n net.ipv4.tcp_syncookies`
 
 1. Install Updates
 
