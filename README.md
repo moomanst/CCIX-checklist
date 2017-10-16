@@ -1,4 +1,4 @@
-# Sean "Forty-Bot" Anderson's 0x539 Linux Checklist v1.0
+# Max S-T's CCXI Checklist v1.0
 
 ## Notes
 
