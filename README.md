@@ -126,6 +126,118 @@ To edit files, run `gedit`, a graphical editor akin to notepad; `nano`, a simple
 * Netcat is installed by default in ubuntu. You will most likely not get points for removing this version.
 * Some services (such as `ssh`) may be required even if they are not mentioned in the readme. Others may be points even if they are explicitly mentioned in the readme
 
+## Securing Windows 7
+ Secure Windows Password ( Press start and search for local security policy or go to the
+control panel\System and Security\Administrative tools)
+• Password History 5 Days
+• Maximum Password age 30-90 days
+• Minimum Password age 5 days
+• Minimum Password Length 8 char.
+• Password Complexity Enabled
+• Reverse Encryptions Disabled
+ Account Lockout Policies( Right under Password policies)
+• Account Lockout Duration 30 minutes
+• Account Lockout Threshold 3
+• Reset account lockout counter 30 minutes
+ Set up Windows Audit Policies (Right under Account Polices in Local Policies)
+• Audit Logon Events Failure
+• Audit Account Management Success
+• Audit Directory Service ND
+• Audit logon Events Failure
+• Audit Objects Access ND
+• Audit Policy Change Success
+• Audit Privilege use success failure
+• Audit Process tracking Success Failure
+• Audit System Events failure
+ Security Options (Beneath User Rights Assignment in Local Policies)
+• Disable Administrator account
+• Disable Guest account
+• Rename administrator and guest accounts
+• Shutdown Without Log on.
+ TURN ON WINDOWS FIREWALL DUMBY!!!
+ Change Passwords for Each User (User policy)
+ Install automatic updates (Control Panel Action Tools under System in security.)
+ Update Windows Programs (i.e. PowerShell, IE all the way to 10)
+ Set local user Admin password to not expire and account enable Admin tools\Computer
+management\users and group\use R
+ Disable and Stop Services in the services menu
+• RDP
+• ICS
+• RDP UserMode 
+• Remote Registry
+• RD Configuration
+• SSDP Discovery
+• UPnP Device Host
+• Remote Desktop
+• WWW Publishing Service
+ Clean the Host File (C:\Windows\System32\drivers\etc\host.txt
+ Deny Following Ports
+• FTP
+• SSH
+• TelNet
+• SNMP
+• LDAP
+• RDP
+ Windows 7 Service packs Installed
+ 
+http://community.spiceworks.com/how_to/show/23456-automatically-update-local-grouppolicies
+http://community.spiceworks.com/scripts/show/1751-automatically-update-local-group-policies 
+
+## Securing Win Server 2016
+ Secure Windows Password ( Press start and search for local security policy or go to the
+control panel\System and Security\Administrative tools\ Group Policy Manager)
+• Password History 5 Days
+• Maximum Password age 30-90 days
+• Minimum Password age 5 days
+• Minimum Password Length 8 char.
+• Password Complexity Enabled
+• Reverse Encryptions Disabled
+ Account Lockout Policies( Right under Password policies)
+• Account Lockout Duration 30 minutes
+• Account Lockout Threshold 3
+• Reset account lockout counter 30 minutes
+ Set up Windows Audit Policies (Right under Account Polices in Group Policys)
+• Audit Logon Events Failure
+• Audit Account Management Success
+• Audit Directory Service ND
+• Audit logon Events Failure
+• Audit Objects Access ND
+• Audit Policy Change Success
+• Audit Privilege use success failure
+• Audit Process tracking Success Failure
+• Audit System Events failure
+ Security Options (Beneath User Rights Assignment in Local Policies)
+• Disable Administrator account
+• Disable Guest account
+• Rename administrator and guest accounts
+• Shutdown Without Log on.
+ TURN ON WINDOWS FIREWALL DUMBY!!!
+ Change Passwords for Each User (User policy)
+ Install automatic updates (Control Panel Action Tools under System in security.)
+ Update Windows Programs (ie. PowerShell, IE all the way to 10)
+ Set local user Admin password to not expire and account enable Admin tools\Computer
+management\users and group\useR
+ Disable and Stop Services in the services menu( Be careful as some of these may be
+needed for the server)
+• RDP
+• ICS
+• RDP UserMode 
+• Remote Registry
+• RD Configuration
+• SSDP Discovery
+• UPnP Device Host
+• Remote Desktop
+• WWW Publishing Service
+ Clean the Host File (C:\Windows\System32\drivers\etc\host.txt
+ Deny Following Ports( May be needed for the Server to function properly.)
+• FTP
+• SSH
+• TelNet
+• SNMP
+• LDAP
+• RDP
+ Windows 2016 Service packs Installed 
+
 ## Acknowledgements
 * Michael "MB" Bailey and Christopher "CJ" Gardner without whose checklists this would never have been possible.
 * Alexander Dittman and Alistair Norton for being fellow linux buddies.
