@@ -1,0 +1,25 @@
+echo off
+
+net accounts /minpwlen:8 #This sets the minimum number of characters a password must contain.
+
+net accounts /maxpwage:days #This sets the maximum number of days after which the user will have to change the password.
+
+net accounts /minpwage:days #history set thing 
+
+net accounts /uniquepw:number #make you not have the same password for like whenever 
+
+
+
+#Security Options 
+
+net user administrator /active:yes  #turning of administrator 
+
+net user guest /active:no   #
+
+
+
+wmic useraccount where name='currentname' rename newname   #acount renamer
+
+shutdown /s   #really hard to figure out :( 
+
+
